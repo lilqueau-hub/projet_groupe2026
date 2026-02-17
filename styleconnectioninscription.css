@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
 }
 html {
     font-size: 62.5%; /* 1rem = 10px */
@@ -10,10 +9,36 @@ html {
 body{
     font-size: 1.4rem; /*14px*/
     font-family: 'Quicksand', sans-serif;
+    background-color: #B8DBD9;
 }
 
 h1 {
     text-align: center;
     justify-content: center;
     align-items: center;
+    font-size: var();
+    color: #2F4550;
+}
+
+.connectInscript {
+    font-weight: 700;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #F4F4F9;
+    padding: 25px;
+    margin: 25px;
+}
+
+.connect {
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: black;
+   
+}
+.inscript {
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
 }
