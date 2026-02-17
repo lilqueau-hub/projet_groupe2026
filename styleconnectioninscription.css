@@ -18,6 +18,7 @@ h1 {
     align-items: center;
     font-size: var();
     color: #2F4550;
+    padding: 15px;
 }
 
 .connectInscript {

@@ -6,16 +6,77 @@
 }
 html {
     font-size: 62.5%; /* 1rem = 10px */
+    
 }
 body{
     font-size: 1.4rem; /*14px*/
     font-family: 'Quicksand', sans-serif;
+    background-color: #B8DBD9;
+    
 }
 
-
+a {
+    background-color: white;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 15%;
+    color: black;
+    font-weight: 500;
+}
 h2 {
     text-align: center;
     justify-content: center;
     align-items: center;
+    font-size: var();
+    color: #2F4550;
 }
+.container {
+    justify-content: center;
+    align-items: center;
 
+}
+#formulaire{
+    width: 50%;
+    color: grey;
+    display: flex;
+    flex-direction: column;
+    padding: 45px;
+}
+.form-item{
+    margin-bottom: 3rem;
+}
+.form-item label{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    color: black;
+}
+.form-item input, textarea{
+    padding: 1rem;
+    width: 100%;
+    color: grey;
+    font-size: 2rem;
+}
+textarea{
+    height: 200px;
+    font-family: inherit; 
+    resize: none;
+}
+#btn{
+    background-color: rgb(255, 255, 255);
+    color: #1E2337;
+    border: none;
+    width: 75%;
+    margin-top: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 15px;
+}
+.error{
+    margin-top: 5px;
+    color: red;
+}
+.invisible{
+    display: none;
+}

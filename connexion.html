@@ -8,31 +8,36 @@
     <link rel="stylesheet" href="styleconnection.css">
 </head>
 <body>
-    
-    <h2>Prospection d'entreprises</h2>
-    <a href="connexionInscription.html">Retour</button>
+    <div class="container">
+        <div class="title">
+            <h2>Prospection d'entreprises</h2>
+            <a href="connexionInscription.html">Retour</a>
+        </div>
+        
+        <div class="connection">
+            <form id="formulaire" action="">
+                <div class="form-item">
+                    <label for="pseudo">Pseudo</label>
+                    <input type="text" id="pseudo" placeholder="Votre pseudonyme">
+                    <div class="error invisible">Ce champ doit contenir entre deux et dix caractères</div>
+                </div>
+                <div class="form-item">
+                    <label for="email">E-mail</label>
+                    <input type="text" name="" id="email" placeholder="Votre e-mail">
+                    <div class="error invisible">Ce champ doit contenir entre deux et dix caractères</div>
+                </div>
+                <div class="form-item">
+                    <label for="password">Mot de passe</label>
+                    <input type="text" id="password" placeholder="Mot de passe">
+                    <div class="error invisible">Ce champ doit contenir entre deux et dix caractères</div>
+                </div>
+                <a href="" id="btn">Connexion</a>
+            </form>
 
-    <div class="connection">
-        <form id="formulaire" action="">
-            <div class="form-item">
-                <label for="pseudo">Pseudo</label>
-                <input type="text" id="pseudo" placeholder="Votre pseudonyme">
-                <div class="error invisible">Ce champ doit contenir entre deux et dix caractères</div>
-            </div>
-            <div class="form-item">
-                <label for="email">E-mail</label>
-                <input type="text" name="" id="email" placeholder="Votre e-mail">
-                <div class="error invisible">Ce champ doit contenir entre deux et dix caractères</div>
-            </div>
-            <div class="form-item">
-                <label for="password">Mot de passe</label>
-                <input type="text" id="password" placeholder="Mot de passe">
-                <div class="error invisible">Ce champ doit contenir entre deux et dix caractères</div>
-            </div>
-            <a href="" id="btn">Connexion</a>
-        </form>
-
+        </div>
     </div>
+
+    
 </body>
 </html>
 
