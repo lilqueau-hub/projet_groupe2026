@@ -33,5 +33,12 @@ h2 {
     justify-items: center;
     justify-content: center;
     margin: auto;
-    
+}
+.listInfo {
+    list-style: none;
+    list-style-type: none;
+}
+.listInfo li {
+    margin-top: 5px;
+    font-weight: 400;
 }
