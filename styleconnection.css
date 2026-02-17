@@ -33,7 +33,7 @@ h2 {
 .container {
     justify-content: center;
     align-items: center;
-
+    margin: auto;
 }
 #formulaire{
     width: 50%;

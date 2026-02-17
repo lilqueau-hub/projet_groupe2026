@@ -10,6 +10,7 @@ body{
     font-size: 1.4rem; /*14px*/
     font-family: 'Quicksand', sans-serif;
     background-color: #B8DBD9;
+    margin: auto;
 }
 
 h1 {
