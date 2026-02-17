@@ -1,4 +1,4 @@
-*{
+span, h1{
     text-align: center;
 }
 
@@ -6,16 +6,28 @@ body{
     background-color: #586F7C;
 }
 
+.logout{
+    position: absolute;
+    text-align: start;
+    text-decoration: none;
+    font-size: 2em;
+    color: #000000;
+    background-color: #B8DBD9;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
 .titre{
- text-align: center;
- background-color: #B8DBD9;
+    text-align: center;
+    background-color: #B8DBD9;
 }
 
 .Activités{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    padding-top: 30px;
+    padding-top: 50px;
 }
 
 .item{
