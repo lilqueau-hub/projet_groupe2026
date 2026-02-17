@@ -60,8 +60,11 @@ body{
     flex-direction: column;
 }
 
-button{
+.detail{
     padding: 5px;
     border-radius: 20px;
     border: #2F4550 3px solid;
+    text-decoration: none;
+    color: #000000;
+    text-align: center;
 }
