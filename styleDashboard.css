@@ -1,0 +1,27 @@
+.titre{
+ text-align: center;
+}
+
+.Activités{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 150px;
+    padding: 50px;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.numéro{
+    font-size: 3em;
+}
+
+.date{
+    font-size: 2em;
+    text-align: center;
+}
