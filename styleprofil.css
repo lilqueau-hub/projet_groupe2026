@@ -17,6 +17,7 @@ body{
 .logoImg {
     display: flex;
     justify-content: end;
+    padding: 15px;
 }
 .logoImg img {
     width: 35px;
@@ -69,5 +70,9 @@ h2 {
     margin-bottom: 10px;
     font-weight: 600;
     font-size: 1.4rem;
-
+}
+.listInfo span {
+    font-weight: 500;
+    font-size: 1.3rem;
+    
 }
