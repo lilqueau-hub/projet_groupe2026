@@ -29,17 +29,32 @@ connectForm.addEventListener('submit', (e)=>{
         inscriptEmailValue.nextElementSibling.classList.remove('invisible');
     } else if (inscriptPasswordValue.length < 2 || inscriptPasswordValue.length > 10){
         inscriptPasswordValue.nextElementSibling.classList.remove('invisible');
+    } else {
+
     }
 })
 
-//     if(prenomValue.length < 2 || prenomValue.length > 10){
-//        monPrenom.nextElementSibling.classList.remove('invisible');
-//     } else if(nomValue.length < 3 || nomValue.length > 15){
-//         monNom.nextElementSibling.classList.remove('invisible');
-//     } else if (messageValue.length < 10 || messageValue.length > 100){
-//         monMessage.nextElementSibling.classList.remove('invisible');
-//     }else{
-//         monTitre.innerText = "Votre message a bien été envoyé.";
-//         monForm.remove();
-//     }
-// })
+
+const connectForm = document.getElementById("formulaire-connection");
+const connectPseudo = document.getElementById("pseudo-connect");
+const connectEmail = document.getElementById("email-connect");
+const connectPassword = document.getElementById("password-connect");
+
+connectForm.addEventListener('', (e)=>{
+    e.preventDefault();
+
+    const connectPseudoValue = connectPseudo.value;
+    const connectEmailValue = connectEmail.value;
+    const connectPassword = connectPassword.value;
+    messageError.forEach(error=>{
+        error.classList.add('invisible');
+    });
+
+    if(connectPseudoValue.length < 2 || connectPseudoValue.length > 10){
+        connectPseudoValue.nextElementSibling.classList.remove('invisible');
+    } else if (connectEmailValue.length < 2 || connectEmailValue.length > 10){
+        connectEmailValue.nextElementSibling.classList.remove('invisible');
+    } else if (connectPassword.length < 2 || connectPassword.length > 10){
+        connectPassword.nextElementSibling.classList.remove('invisible');
+    } 
+})
