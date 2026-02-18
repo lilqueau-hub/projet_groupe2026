@@ -12,10 +12,21 @@ body{
     font-family: 'Quicksand', sans-serif;
 }
 
+.logoImg {
+    display: flex;
+    justify-content: end;
+}
+.logoImg img {
+    width: 35px;
+    height: 35px;
+}
 header {
     background-color: #2F4550;
     padding: 15px;
-    text-align: center;
+}
+.head {
+    display: flex;
+    justify-content: space-between;
 }
 h1 {
     color: white;
