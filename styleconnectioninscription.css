@@ -11,6 +11,7 @@ body{
     font-family: 'Quicksand', sans-serif;
     background-color: #B8DBD9;
     height: 100vh;
+    position: relative;
 }
 
 h1 {
@@ -24,7 +25,11 @@ h1 {
 
 .container {
     text-align: center;
-    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 55%;
 }
 
 .connectInscript {
@@ -35,7 +40,6 @@ h1 {
     flex-direction: column;
     text-align: center;
     background-color: #F4F4F9;
-    width: 55%;
     margin: auto;
 }
 
