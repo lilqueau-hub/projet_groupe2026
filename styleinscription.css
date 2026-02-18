@@ -12,6 +12,7 @@ body{
     font-size: 1.4rem; /*14px*/
     font-family: 'Quicksand', sans-serif;
     background-color: #B8DBD9;
+    height: 100vh;
     
 }
 
@@ -23,19 +24,24 @@ a {
     color: black;
     font-weight: 500;
 }
-h2 {
+h1 {
     text-align: center;
     justify-content: center;
     align-items: center;
-    font-size: var();
     color: #2F4550;
+    padding: 15px;
 }
 .container {
-    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
     align-items: center;
-
+    justify-content: center;
+    display: flex;
 }
-#formulaire{
+.formulaire-inscription{
     width: 50%;
     color: grey;
     display: flex;
@@ -44,6 +50,7 @@ h2 {
 }
 .form-item{
     margin-bottom: 3rem;
+    
 }
 .form-item label{
     display: block;
@@ -66,7 +73,7 @@ textarea{
     background-color: rgb(255, 255, 255);
     color: #1E2337;
     border: none;
-    width: 75%;
+    width: 100%;
     margin-top: 2rem;
     font-weight: 900;
     text-transform: uppercase;
