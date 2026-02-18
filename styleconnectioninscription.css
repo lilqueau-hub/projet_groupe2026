@@ -10,7 +10,7 @@ body{
     font-size: 1.4rem; /*14px*/
     font-family: 'Quicksand', sans-serif;
     background-color: #B8DBD9;
-    margin: auto;
+    height: 100vh;
 }
 
 h1 {
@@ -24,31 +24,29 @@ h1 {
 
 .container {
     text-align: center;
-    justify-content: center;
-    align-items: center;
-    
+    margin: 0 auto;
 }
 
 .connectInscript {
     font-weight: 700;
     text-decoration: none;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     text-align: center;
     background-color: #F4F4F9;
-    padding: 45px;
-    margin: 45px;
     width: 55%;
+    margin: auto;
 }
 
-.connect {
-    font-size: 2.5rem;
+.connect, .inscript {
     text-decoration: none;
     color: black;
-   
+    padding: 2rem;
+}
+.connect {
+    font-size: 2.5rem;
 }
 .inscript {
     font-size: 2rem;
-    text-decoration: none;
-    color: black;
 }
