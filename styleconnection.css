@@ -56,12 +56,10 @@ h1 {
     display: block;
     margin-bottom: 10px;
     font-size: 2rem;
-    color: black;
 }
 .form-item input, textarea{
     padding: 1rem;
     width: 100%;
-    color: grey;
     font-size: 2rem;
 }
 textarea{
