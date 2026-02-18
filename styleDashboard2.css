@@ -1,0 +1,63 @@
+.background{
+    background-color: #586F7C;
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+
+aside{
+    padding: 40px 8px;
+    margin-left: 10px;
+    background-color: #D9D9D9;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 300px;
+}
+
+.champs{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.champ{
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+}
+
+.champ label{
+    color: #FFFFFF;
+}
+
+.champ input{
+    background-color: #D9D9D9;
+}
+
+.btn{
+    padding: 10px 50px;
+    margin-bottom: 20px;
+    color: black;
+    background-color: #BBE3E0;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+.background{
+    background-color: #586F7C;
+    height: 600px;
+    display: flex;
+    align-items: center;
+}
+.form{
+    margin-left: 0px;
+}
+.champs{
+    display: flex;
+    flex-wrap: wrap;
+}
+}
