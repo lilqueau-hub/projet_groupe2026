@@ -49,7 +49,6 @@ const addDays = (date, days) => {
     const tempDate = new Date(date.split('/').reverse().join('-'));
     const newDate = tempDate.setDate(tempDate.getDate() + days)
     console.log(newDate);
-    // newDate.
     return new Date(newDate).toLocaleDateString();
 }
 

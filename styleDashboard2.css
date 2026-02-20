@@ -38,7 +38,7 @@ aside{
     background-color: #D9D9D9;
 }
 
-.btn{
+.btn-ajout{
     padding: 10px 50px;
     margin-bottom: 20px;
     color: black;
@@ -46,8 +46,39 @@ aside{
     border-radius: 5px;
 }
 
+table{
+    border-collapse : separate;
+    border-spacing : 0px 20px;
+}
+
+.tbody tr{
+    width: 100vw;
+    background-color: #D9D9D9;
+}
+
+.tbody tr td{
+    width: 15vw;
+    height: 50px;
+    text-align: center;
+}
+
+.td-btn{
+    color: #F4F4F9;
+    background-color: white;
+    display: flex;
+    justify-content: start;
+}
+
+.btn-modif{
+    margin-top: -5px;
+    width: 60px;
+    height: 60px;
+}
+
 @media (max-width: 768px) {
 .background{
+    /* object-fit: cover;
+    width: 100vw; */
     background-color: #586F7C;
     height: 600px;
     display: flex;
@@ -60,4 +91,5 @@ aside{
     display: flex;
     flex-wrap: wrap;
 }
+
 }
