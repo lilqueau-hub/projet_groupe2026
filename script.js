@@ -56,11 +56,10 @@ async function addUser() {
 }
 addUser();
 
-// const inscriptBtn = document.getElementById("btnInscript");
 
 button.addEventListener("click", () => {
     const inscriptBtn = document.getElementById("btnInscript");
-    
+    localStorage.addUser();
 })
 
 const connectForm = document.getElementById("formulaire-connection");
