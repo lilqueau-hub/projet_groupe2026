@@ -37,34 +37,21 @@ h1 {
     padding: 15px;
 }
 
-.formulaire-connection{
-    width: 50%;
-    color: grey;
-    display: flex;
-    flex-direction: column;
-    padding: 45px;
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    align-items: center;
+    justify-content: center;
 }
-.form-item{
-    margin-bottom: 3rem;
-}
-.form-item label{
-    display: block;
-    margin-bottom: 10px;
-    font-size: 2rem;
-}
-.form-item input, textarea{
-    padding: 1rem;
-    width: 100%;
-    font-size: 2rem;
-    border: none;
-}
-textarea{
-    height: 200px;
-    font-family: inherit; 
-    resize: none;
+
+.load {
+    text-align: center;
 }
 .connectBtn{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(228, 0, 0);
     color: #1E2337;
     border: none;
     margin-top: 2rem;
