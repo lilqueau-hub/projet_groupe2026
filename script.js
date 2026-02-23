@@ -4,8 +4,10 @@ const inscriptPrenom = document.getElementById("prenom-inscript");
 const inscriptNom = document.getElementById("nom-inscript");
 const inscriptEmail = document.getElementById("email-inscript");
 const inscriptPassword = document.getElementById("password-inscript");
+const inscriptBtn = document.getElementById("btnInscript");
 const inscriptError = document.getElementById(".error");
 const inscriptTitre = document.getElementById("titre");
+
 
 connectForm.addEventListener('submit', (e)=>{
     e.preventDefault();
