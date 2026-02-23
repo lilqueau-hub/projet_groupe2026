@@ -8,6 +8,17 @@
     <script src="scriptDashborad2.js" defer></script>
 </head>
 <body>
+    <header>
+        <div class="head">
+            <div class="void"></div>
+            <div class="headDash">
+                <a href="dashboard2.html"><h1 class="titre">Prospection d'entreprises</h1></a>
+            </div>
+            <div class="logoImg">
+                <a href="profil.html"><img src="img/png-clipart-user-profile-computer-icons-login-user-avatars-monochrome-black-thumbnail-removebg-preview.png" alt=""></a>
+            </div>
+        </div>
+    </header>
     <div class="background">
         <aside>Sidebar</aside>
         <form class="form" action="">
@@ -15,22 +26,22 @@
 
                 <div class="champ">
                     <label for="nom-entreprise">Nom de l'entreprise</label>
-                        <input id="nom-entreprise" type="text">
+                        <input id="nom-entreprise" type="text" placeholder="Solacroup">
 
                 </div>
                 <div class="champ">
                     <label for="poste">Poste visé</label>
-                        <input id="poste" type="text">
+                        <input id="poste" type="text" placeholder="Développeur">
 
                 </div>
                 <div class="champ">
                     <label for="statut">Statut</label>
-                        <input id="statut" type="text">
+                        <input id="statut" type="text" placeholder="En attente">
 
                 </div>
                 <div class="champ">
                     <label for="date">Date</label>
-                        <input id="date" type="text">
+                        <input id="date" type="date" placeholder="Aujourd'hui">
                     
                 </div>
 
@@ -38,6 +49,7 @@
             <button class="btn-ajout" type="submit">Ajouter</button>
         </form>
     </div>
+    <div class="center">
     <table>
         <thead>
             <th>Statut</th>
@@ -45,27 +57,12 @@
             <th>Nom d'entreprise</th>
             <th>Envoie</th>
             <th>Relance</th>
+            <th></th>
         </thead>
         <!-- Se transforme en input au click -->
         <tbody class="tbody">
-            <!-- <tr>
-                <td>En attente</td>
-                <td>développeur</td>
-                <td>Solacroup</td>
-                <td>18/02/2026</td>
-                <td>18/02/2026</td>
-                <td class="td-btn"><button class="btn-modif">+</button></td>
-            </tr>
-            
-            <tr>
-                <td>En attente</td>
-                <td>développeur</td>
-                <td>Solacroup</td>
-                <td>18/02/2026</td>
-                <td>18/02/2026</td>
-                <td class="td-btn"><button class="btn-modif">+</button></td>
-            </tr> -->
         </tbody>
     </table>
+    </div>
 </body>
 </html>

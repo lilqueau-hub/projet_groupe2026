@@ -21,7 +21,82 @@
     </header>
 
     <main>
-        
+        <div class="background">
+        <aside>Sidebar</aside>
+        <form class="form" action="">
+            <div class="champs">
+
+                <div class="champ">
+                    <label for="lien-entreprise">Lien entreprise</label>
+                    <input id="lien-entreprise" type="text" placeholder="lien">
+
+                </div>
+                <div class="champ">
+                    <label for="contact">Contact</label>
+                    <input id="contact" type="text" placeholder="tel ou email">
+
+                </div>
+                <div class="champ">
+                    <label for="lien-annonce">Lien annonce</label>
+                    <input id="lien-annonce" type="text" placeholder="lien">
+
+                </div>
+                <div class="champ">
+                    <label for="lieu">Lieu</label>
+                    <input id="lieu" type="text" placeholder="Distanciel">
+                    
+                </div>
+                <div class="champ">
+                    <label for="type">Type</label>
+                    <input id="type" type="text" placeholder="Stage">
+                    
+                </div>
+                
+            </div>
+            <button class="btn-ajout" type="submit">Ajouter</button>
+        </form>
+    </div>
+    <div class="center">
+
+        <table>
+            <thead>
+                <th>Statut</th>
+                <th>Poste visé</th>
+                <th>Nom d'entreprise</th>
+                <th>Envoie</th>
+                <th>Relance</th>
+            </thead>
+            <!-- Se transforme en input au click -->
+            <tbody class="tbody">
+                <tr>
+                    <td>En attente</td>
+                    <td>développeur</td>
+                    <td>Solacroup</td>
+                    <td>18/02/2026</td>
+                    <td>18/02/2026</td>
+                </tr>
+            </tbody>
+            <thead>
+                <th>Lien entreprise</th>
+                <th>Contact</th>
+                <th>Lien annonce</th>
+                <th>Lieu</th>
+                <th>Type</th>
+            </thead>
+            <!-- Se transforme en input au click -->
+            <tbody class="tbody-2">
+                <tr>
+                    <td>En attente</td>
+                    <td>développeur</td>
+                    <td>Solacroup</td>
+                    <td>18/02/2026</td>
+                    <td>18/02/2026</td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="btn-suppression">Suprimer</button>
+    </div>
     </main>
+    
 </body>
 </html>
