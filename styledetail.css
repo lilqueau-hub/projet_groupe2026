@@ -11,7 +11,7 @@ html {
 body{
     font-size: 1.4rem; /*14px*/
     font-family: 'Quicksand', sans-serif;
-    background-color: #B8DBD9;
+    background-color: white;
     
 }
 .logoImg {
@@ -33,4 +33,136 @@ header {
 }
 h1 {
     color: white;
+}
+
+.background{
+    background-color: #586F7C;
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+
+aside{
+    padding: 40px 8px;
+    margin-left: 10px;
+    background-color: #D9D9D9;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 300px;
+}
+
+.champs{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.champ{
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+}
+
+.champ label{
+    color: #FFFFFF;
+}
+
+.champ input{
+    background-color: #D9D9D9;
+}
+
+.btn-ajout{
+    padding: 10px 50px;
+    margin-bottom: 20px;
+    color: black;
+    background-color: #BBE3E0;
+    border-radius: 5px;
+}
+
+.btn-suppression{
+    padding: 10px 50px;
+    margin-bottom: 20px;
+    color: black;
+    background-color: #e3bbbb;
+    border-radius: 5px;
+}
+
+table{
+    border-collapse : separate;
+    border-spacing : 0px 20px;
+}
+
+.tbody tr, .tbody-2 tr{
+    width: 100vw;
+    background-color: #D9D9D9;
+}
+
+.tbody tr td, .tbody-2 tr td{
+    width: 15vw;
+    height: 50px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.td-btn{
+    color: #F4F4F9;
+    background-color: white;
+    display: flex;
+    justify-content: start;
+}
+
+.btn-modif{
+    margin-top: -5px;
+    width: 60px;
+    height: 60px;
+}
+
+
+@media (max-width: 1400px) {
+.background{
+    /* object-fit: cover;
+    width: 100vw; */
+    background-color: #586F7C;
+    height: 300px;
+    display: flex;
+    align-items: center;
+}
+.form{
+    margin-left: 0px;
+}
+.champs{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+}
+
+
+@media (max-width: 768px) {
+.background{
+    /* object-fit: cover;
+    width: 100vw; */
+    background-color: #586F7C;
+    height: 800px;
+    display: flex;
+    align-items: center;
+}
+.form{
+    margin-left: 0px;
+}
+.champs{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 }
