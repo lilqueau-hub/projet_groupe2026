@@ -4,7 +4,6 @@ const inscriptPrenom = document.getElementById("prenom-inscript");
 const inscriptNom = document.getElementById("nom-inscript");
 const inscriptEmail = document.getElementById("email-inscript");
 const inscriptPassword = document.getElementById("password-inscript");
-const inscriptBtn = document.getElementById("btnInscript");
 const inscriptError = document.getElementById(".error");
 const inscriptTitre = document.getElementById("titre");
 
@@ -36,11 +35,39 @@ connectForm.addEventListener('submit', (e)=>{
     }
 })
 
+// function submitInscription() {
+
+// }
+
+
+// class compteGroup {
+//     constructor(pseudo) {
+//         this.pseudo = pseudo;
+//     }
+// }
+async function addUser() {
+    try {
+        const response = await fetch('')
+        const data = await response.json();
+        console.log(data);
+    } catch(err) {
+        console.error("Erreur:", err);
+    }
+}
+addUser();
+
+// const inscriptBtn = document.getElementById("btnInscript");
+
+button.addEventListener("click", () => {
+    const inscriptBtn = document.getElementById("btnInscript");
+    
+})
 
 const connectForm = document.getElementById("formulaire-connection");
 const connectPseudo = document.getElementById("pseudo-connect");
 const connectEmail = document.getElementById("email-connect");
 const connectPassword = document.getElementById("password-connect");
+const btnConnect = document.getElementById("connectBtn");
 
 connectForm.addEventListener('', (e)=>{
     e.preventDefault();
@@ -60,3 +87,4 @@ connectForm.addEventListener('', (e)=>{
         connectPassword.nextElementSibling.classList.remove('invisible');
     } 
 })
+
