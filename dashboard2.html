@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="cover" lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styleDashboard2.css">
+    <script src="scriptDashborad2.js" defer></script>
 </head>
 <body>
     <div class="background">
@@ -13,8 +14,8 @@
             <div class="champs">
 
                 <div class="champ">
-                    <label for="nom_entreprise">Nom de l'entreprise</label>
-                        <input id="nom_entreprise" type="text">
+                    <label for="nom-entreprise">Nom de l'entreprise</label>
+                        <input id="nom-entreprise" type="text">
 
                 </div>
                 <div class="champ">
@@ -34,8 +35,37 @@
                 </div>
 
             </div>
-            <button class="btn" type="submit">Ajouter</button>
+            <button class="btn-ajout" type="submit">Ajouter</button>
         </form>
     </div>
+    <table>
+        <thead>
+            <th>Statut</th>
+            <th>Poste visé</th>
+            <th>Nom d'entreprise</th>
+            <th>Envoie</th>
+            <th>Relance</th>
+        </thead>
+        <!-- Se transforme en input au click -->
+        <tbody class="tbody">
+            <!-- <tr>
+                <td>En attente</td>
+                <td>développeur</td>
+                <td>Solacroup</td>
+                <td>18/02/2026</td>
+                <td>18/02/2026</td>
+                <td class="td-btn"><button class="btn-modif">+</button></td>
+            </tr>
+            
+            <tr>
+                <td>En attente</td>
+                <td>développeur</td>
+                <td>Solacroup</td>
+                <td>18/02/2026</td>
+                <td>18/02/2026</td>
+                <td class="td-btn"><button class="btn-modif">+</button></td>
+            </tr> -->
+        </tbody>
+    </table>
 </body>
 </html>
