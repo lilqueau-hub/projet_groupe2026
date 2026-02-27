@@ -103,12 +103,8 @@ table{
     width: 15vw;
     height: 50px;
     text-align: center;
-    border: 1px solid black;
 }
 
-.td :nth-child(5){
-    border: none;
-}
 
 .td-btn{
     color: #F4F4F9;
@@ -160,5 +156,18 @@ table{
     display: flex;
     flex-wrap: wrap;
 }
-
+.tbody tr td{
+    border: 1px solid black;
+    overflow: auto;
+}
+table{
+    overflow-x: scroll;
+    overflow: visible;
+    table-layout: fixed;
+    width: 100%
+}
+.center{
+    overflow: auto;
+    overflow-x: scroll;
+}
 }
