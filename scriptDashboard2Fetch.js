@@ -1,20 +1,45 @@
+
+
+
+
+
+
+
+
+
+
+
+
+let fetchTest = async () => {
+    let data = await fetch('/JSON/fetch.json');
+    let res = await data.json();
+    let results = await res.results;
+
+    return results;
+}
+
+
+
 const ajout = document.querySelector(".btn-ajout");
 
 const ViderList = () => {
     const tableau = document.querySelector(".tbody");
     tableau.innerHTML = "";
 }
-const afficher_list = () => {
+const afficher_list = async () => {
+const results = await fetchTest();
+
     const tableau = document.querySelector(".tbody");
     let noms_entreprises = [];
     let postes = [];
     let statuts = [];
     let dates = [];
-    if (localStorage.getItem("noms_entreprises")){
-        noms_entreprises = JSON.parse(localStorage.getItem("noms_entreprises"));
-        postes = JSON.parse(localStorage.getItem("postes"));
-        statuts = JSON.parse(localStorage.getItem("statuts"));
-        dates = JSON.parse(localStorage.getItem("dates"));
+
+    for (let i = 0; i < results.length; i++){
+        noms_entreprises.push(results[i].nom_entreprise);
+        postes.push(results[i].poste_vise);
+        statuts.push(results[i].statut);
+        dates.push(results[i].date_envoi);
     }
 
     const length = noms_entreprises.length
@@ -108,8 +133,7 @@ const afficher_list = () => {
 }
 
 const addDays = (date, days) => {
-    // const tempDate = new Date(date.split('/').reverse().join('-'));
-    // const newDate = tempDate.setDate(tempDate.getDate() + days)
+
     const tempDate = new Date(date);
     const newDate = tempDate.setDate(tempDate.getDate() + days)
     console.log(newDate);
@@ -163,11 +187,11 @@ ajout.addEventListener("click", (e) =>{
     let postes = [];
     let statuts = [];
     let dates = [];
-    if (localStorage.getItem("noms_entreprises")){
-        noms_entreprises = JSON.parse(localStorage.getItem("noms_entreprises"));
-        postes = JSON.parse(localStorage.getItem("postes"));
-        statuts = JSON.parse(localStorage.getItem("statuts"));
-        dates = JSON.parse(localStorage.getItem("dates"));
+    for (let i = 0; i < results.length; i++){
+        noms_entreprises.push(results[i].nom_entreprise);
+        postes.push(results[i].poste_vise);
+        statuts.push(results[i].statut);
+        dates.push(results[i].date_envoi);
     }
 
     tr.id = noms_entreprises.length;

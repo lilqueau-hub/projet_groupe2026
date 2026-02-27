@@ -161,13 +161,8 @@ table{
     overflow: auto;
 }
 table{
-    overflow-x: scroll;
-    overflow: visible;
     table-layout: fixed;
     width: 100%
 }
-.center{
-    overflow: auto;
-    overflow-x: scroll;
-}
+
 }
