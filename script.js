@@ -1,65 +1,46 @@
 const inscriptForm = document.getElementById("formulaire-inscription");
-const inscriptPseudo = document.getElementById("pseudo-inscript");
-const inscriptPrenom = document.getElementById("prenom-inscript");
-const inscriptNom = document.getElementById("nom-inscript");
-const inscriptEmail = document.getElementById("email-inscript");
-const inscriptPassword = document.getElementById("password-inscript");
-const inscriptError = document.getElementById(".error");
-const inscriptTitre = document.getElementById("titre");
 
-
-inscriptForm.addEventListener('submit', (e)=>{
+inscriptForm.addEventListener('submit', async (e)=>{
     e.preventDefault();
 
-    const inscriptPrenomValue = inscriptPrenom.value;
-    const inscriptNomValue = inscriptNom.value;
-    const inscriptPseudoValue = inscriptPseudo.value;
-    const inscriptEmailValue = inscriptEmail.value;
-    const inscriptPasswordValue = inscriptPassword.value;
+    const data = {
+        pseudo : document.getElementById("pseudo-inscript").value,
+        prenom : document.getElementById("prenom-inscript").value,
+        nom : document.getElementById("nom-inscript").value,
+        email : document.getElementById("email-inscript").value,
+        password : document.getElementById("password-inscript").value,
+        error : document.getElementById(".error").value,
+        titre : document.getElementById("titre").value
+    }
 
-    // try {
-    //     const response = await fetch('http://localhost:8000/api/register', {
-    //     method: 'POST',
-    //     headers: { 'Content-Type': 'application/json' },
-    //     body: JSON.stringify(data)
-    // });
+    try {
+        const response = await fetch('http://localhost:8000/api/register', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(data)
+    });
 
-    // const result = await response.json();
-    // console.log(result);
+    const result = await response.json();
+    console.log(result);
 
-    // } catch(err) {
-    //     errorDiv.textContent = `Erreur : `
-    // }
+    } catch(err) {
+        errorDiv.textContent = `Erreur : `
+    }
 })
 
-
-// class carnetUtilisateurs {
-//   constructor() {
-//     this.utilisateurs = []
-//   }
-
-//   // CREATE / ajouter un utilisateur
-//   ajouterUtilisateur(utilisateur){
-//     if(!(utilisateur instanceof Utilisateurs)) {
-//       console.log('Erreur...')
-//       return
-//     }
-//     this.utilisateurs.push(utilisateur)
-//     console.log(`Utilisateur ${utilisateur.nom} ${utilisateur.age} ajouté`)
-//   }
-
 const connectForm = document.getElementById("formulaire-connection");
-const connectPseudo = document.getElementById("pseudo-connect");
-const connectEmail = document.getElementById("email-connect");
-const connectPassword = document.getElementById("password-connect");
 const btnConnect = document.getElementById("connectBtn");
 
 connectForm.addEventListener('submit', async (e)=>{
     e.preventDefault();
 
-    const connectPseudoValue = connectPseudo.value;
-    const connectEmailValue = connectEmail.value;
-    const connectPasswordValue = connectPassword.value;
+    const data = {
+        pseudo : document.getElementById("pseudo-inscript").value,
+        email : document.getElementById("email-inscript").value,
+        password : document.getElementById("password-inscript").value,
+        error : document.getElementById(".error").value,
+        titre : document.getElementById("titre").value
+    }
     
     try {
         const response = await fetch('http://localhost:8000/api/register', {
@@ -95,14 +76,12 @@ profilForm.addEventListener('submit', async (e)=> {
 
         profilDiv.innerHTML = `
             <p>Pseudonyme: ${data.pseudo} </p>
-            <p>Prénom: ${data.name} </p>
-            <p>Nom: ${data.surname} </p>
+            <p>Prénom: ${data.prenom} </p>
+            <p>Nom: ${data.nom} </p>
             <p>E-mail: ${data.email} </p>
             <p>Numéro de téléphone: ${data} </p>        
         `
-
     }catch(err) {
         errorDiv.textContent = `Erreur : `
     }
 });
-
