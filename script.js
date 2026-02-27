@@ -1,4 +1,5 @@
 const inscriptForm = document.getElementById("formulaire-inscription");
+const btnInscript = document.getElementById("btnInscript");
 
 inscriptForm.addEventListener('submit', async (e)=>{
     e.preventDefault();
@@ -14,7 +15,7 @@ inscriptForm.addEventListener('submit', async (e)=>{
     }
 
     try {
-        const response = await fetch('http://localhost:8000/api/register', {
+        const response = await fetch('/JSON/fetch.json', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
         body: JSON.stringify(data)
@@ -43,7 +44,7 @@ connectForm.addEventListener('submit', async (e)=>{
     }
     
     try {
-        const response = await fetch('http://localhost:8000/api/register', {
+        const response = await fetch('/JSON/fetch.json', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data)
@@ -59,6 +60,28 @@ connectForm.addEventListener('submit', async (e)=>{
     
 });
 
+const saveProfil = document.getElementById("enregistrementProfil");
+
+saveProfil.addEventListener('', async (e)=> {
+    e.preventDefault();
+
+    try {
+        const response = await fetch('/JSON/fetch.json');
+        if(!response.ok) {
+            throw new Error(`Erreur HTTP: ${response.status} (${response.statusText}) `);
+        }
+    
+    const data = await response.json();
+
+    enregistrementProfil.innerHTML = `
+        <p>Le compte a été enregistré sous le pseudonyme ${data.pseudo}</p>
+        <a href="connexion.html" class="connectBtn">Se connecter</a> 
+    `
+    } catch(err) {
+        errorDiv.textContent = `Erreur : `
+    }
+
+});
 
 const profilDiv = document.getElementById("profilInformation");
 const profilForm = document.getElementById("profilList");
@@ -67,7 +90,7 @@ profilForm.addEventListener('submit', async (e)=> {
     e.preventDefault();
 
     try {
-        const response = await fetch('');
+        const response = await fetch('/JSON/fetch.json');
         if(!response.ok) {
             throw new Error(`Erreur HTTP: ${response.status} (${response.statusText}) `);
         }
