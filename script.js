@@ -1,3 +1,5 @@
+const { createElement } = require("react");
+
 const inscriptForm = document.getElementById("formulaire-inscription");
 const btnInscript = document.getElementById("btnInscript");
 
@@ -84,24 +86,37 @@ saveProfil.addEventListener('', async (e)=> {
 });
 
 const profilDiv = document.getElementById("profilInformation");
+const listInfo = document.getElementById("listInfo")
 
 profilDiv.addEventListener('submit', async (e)=> {
     e.preventDefault();
 
     try {
-        const response = await fetch('/JSON/fetch.json');
+        const response = await fetch('/JSON/user.json');
         if(!response.ok) {
             throw new Error(`Erreur HTTP: ${response.status} (${response.statusText}) `);
         }
 
-        const data = await response.json();
+        const profils = await response.json();
 
-        profilInformation.innerHTML = `
-            <p>Pseudonyme: ${data.pseudo} </p>
-            <p>Prénom: ${data.prenom} </p>
-            <p>Nom: ${data.nom} </p>
-            <p>E-mail: ${data.email} </p>   
-        `
+        profils.forEach (profil => {
+            const pseudo = document.createElement("li")
+            pseudo.textContent = `Pseudo: ${profil.pseudo}`
+
+            const prenom = document.createElement("li")
+            prenom.textContent = `Prénom: ${profil.prenom}`
+
+            const nom = document.createElement("li")
+            nom.textContent = `Nom: ${profil.nom}`
+
+            const email = document.createElement("li")
+            email.textContent = `E-mail: ${profil.email}`
+
+            listInfo.appendChild(pseudo, prenom, nom, email)
+
+        })
+
+        
     }catch(err) {
         errorDiv.textContent = `Erreur : `
     }

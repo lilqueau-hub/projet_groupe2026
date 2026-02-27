@@ -1,0 +1,17 @@
+{
+    "profils":
+    [
+        {
+            "pseudo": "Test 1",
+            "prenom": "toto",
+            "nom": "Titi",
+            "email": "toto@test.com"
+        },
+        {
+            "pseudo": "Test 2",
+            "prenom": "tara",
+            "nom": "Tira",
+            "email": "tira@test.com"
+        }
+    ]
+}
