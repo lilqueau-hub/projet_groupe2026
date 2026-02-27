@@ -26,6 +26,10 @@ button {
 }
 .returnBtn {
     width: 100%;
+    background-color: white;
+    height: 50%;
+    padding-left: 1%;
+    padding-right: 1%;
     font-weight: 600;
 }
 h1 {

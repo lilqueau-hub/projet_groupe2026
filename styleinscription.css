@@ -72,6 +72,14 @@ textarea{
     font-family: inherit; 
     resize: none;
 }
+.returnBtn {
+    width: 100%;
+    background-color: white;
+    height: 50%;
+    padding-left: 1%;
+    padding-right: 1%;
+    font-weight: 600;
+}
 .inscriptBtn{
     background-color: rgb(255, 255, 255);
     color: #1E2337;
