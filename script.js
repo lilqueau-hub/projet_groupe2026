@@ -84,9 +84,8 @@ saveProfil.addEventListener('', async (e)=> {
 });
 
 const profilDiv = document.getElementById("profilInformation");
-const profilForm = document.getElementById("profilList");
 
-profilForm.addEventListener('submit', async (e)=> {
+profilDiv.addEventListener('submit', async (e)=> {
     e.preventDefault();
 
     try {
@@ -97,12 +96,11 @@ profilForm.addEventListener('submit', async (e)=> {
 
         const data = await response.json();
 
-        profilDiv.innerHTML = `
+        profilInformation.innerHTML = `
             <p>Pseudonyme: ${data.pseudo} </p>
             <p>Prénom: ${data.prenom} </p>
             <p>Nom: ${data.nom} </p>
-            <p>E-mail: ${data.email} </p>
-            <p>Numéro de téléphone: ${data} </p>        
+            <p>E-mail: ${data.email} </p>   
         `
     }catch(err) {
         errorDiv.textContent = `Erreur : `
